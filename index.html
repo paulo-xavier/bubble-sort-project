@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Start</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/settings.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@300;500;700&family=Oxanium:wght@300;400;700&family=Poppins&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/sorting.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="themes/prism (1).css" data-noprefix />
+    <link rel="stylesheet" href="./src/css/scrollbar.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <header>
+        <img class="senac-logo" src="./images/senac-logo.png" alt="Senac Logo">
+
+    </header>       
+    <main>
+        <section class="section1">
+            <div class="title-info">
+                <h1> Bubble sort</h1>
+                <p class="bubble-sort-info"> Sorting algorithms are fundamental techniques used in computer science to
+                    arrange elements in a specific order, typically in ascending or descending order. One of the
+                    simplest and most straightforward sorting algorithms is Bubble Sort. <br>
+                <p class="bubble-sort-info">Bubble Sort is a comparison-based algorithm that repeatedly steps through
+                    the list to be sorted, compares adjacent elements, and swaps them if they are in the wrong order.
+                    The algorithm gets its name from the way smaller elements "bubble" to the top of the list while
+                    larger elements "sink" to the bottom.</p>
+                </p>
+            </div>
+            <aside>
+                <img class="computer-image" src="./images/aside.png" alt="Computer Image">
+            </aside>
+
+
+
+        </section>
+
+        <section class="section2">
+            <h2 class="definition"> Definition </h2>
+            <p class="explanation"> The basic idea behind Bubble Sort is as follows: Start at the beginning of the list,
+                Compare the first two elements,if the first element is greater than the second element,
+                swap them.
+                Move to the next pair of adjacent elements and repeat the comparison and swap process.
+                Continue iterating through the list until no more swaps are required, indicating that the list is
+                sorted.</p>
+
+        </section>
+
+        <section class="bubble-sort">
+            <div class="sorting-container" id="sortingContainer">
+                <!-- Elements to be sorted will be added here dynamically -->
+            </div>
+
+            <div class="button-area">
+                <button class="button" onclick="startSorting()">Start Sorting</button>
+            </div>
+
+        </section>
+
+
+
+        <section class="section-code">
+            <h2 class="definition-code"> Code </h2>
+            <p class="explanation"> Example of the code above using JavaScript to implement the Bubble Sort algorithm and showing the basic functionality of this sorting method.
+            </p>
+
+
+
+        </section>
+
+
+        <section class="section3">
+            <pre>
+                <code class="language-javascript">
+// Bubble sort Implementation using Javascript
+
+// Creating the bblSort function
+function bblSort(arr) {
+
+    for (var i = 0; i < arr.length; i++) {
+
+        // Last i elements are already in place
+        for (var j = 0; j < (arr.length - i - 1); j++) {
+
+            // Checking if the item at present iteration
+            // is greater than the next iteration
+            if (arr[j] > arr[j + 1]) {
+
+                // If the condition is true
+                // then swap them
+                var temp = arr[j]
+                arr[j] = arr[j + 1]
+                arr[j + 1] = temp
+            }
+        }
+    }
+
+    // Print the sorted array
+    console.log(arr);
+}
+
+// This is our unsorted array
+var arr = [234, 43, 55, 63, 5, 6, 235, 547];
+
+// Now pass this array to the bblSort() function
+bblSort(arr);
+                    
+                </code>
+              </pre>
+
+        </section>
+
+
+
+
+
+        <footer>
+            <div class="content">
+                <div class="text">
+                    <p class="text about">Developed by Paulo Xavier </p>
+                </div>
+
+                <div class="social-links">
+                    <div class="github">
+                        <a href="https://github.com/P4ULOX4VIER" target="_blank">
+                            <img class="github-icon" src="./images/footer/social-medias/github.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="linkedin">
+                        <a href="https://www.linkedin.com/in/paulo-roberto-xavier-da-silva-15bb6924a/" target="_blank">
+                            <img class="linkedin-icon" src="./images/footer/social-medias/linkedin.png" alt="">
+                        </a>
+                    </div>
+                    <div class="instagram">
+                        <a href="https://www.instagram.com/oxavierpaulo/" target="_blank">
+                            <img class="instagram-icon" src="./images/footer/social-medias/instagram.png" alt="">
+                        </a>
+                    </div>
+                </div>
+        </footer>
+
+
+
+
+    </main>
+    <script src="./src/javascript/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.28.0/prism.min.js"></script>
+    <script>
+        // Initialize Prism.js
+        Prism.highlightAll();
+    </script>
+</body>
+
+</html>

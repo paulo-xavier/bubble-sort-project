@@ -1,0 +1,22 @@
+
+
+/* Animation */
+@keyframes swap {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-200px);
+    }
+}
+
+@keyframes color-change {
+    from {
+        background-color: #3498db;
+    }
+    to {
+        background-color: darkgreen;
+         /* Increase the duration here (e.g., 2 seconds) */
+        animation-duration: 4s;
+    }
+}

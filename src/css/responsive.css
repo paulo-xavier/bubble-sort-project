@@ -1,0 +1,45 @@
+@media (max-width: 900px) {
+
+    .section1, 
+    .section2,
+    .section-code {
+        padding-left: 2%;    /**/
+        margin: 0 auto; 
+        flex-wrap: wrap;   
+        padding-top: 60px;
+
+    }
+
+    .title-info,
+    .button-area {
+        padding-left: 0px;  
+        align-items: center;
+        
+    }
+
+    aside {
+        margin: 0 auto; 
+    
+    }
+    
+    .computer-image {
+        margin: 0 auto;
+    }
+
+    .bubble-sort { 
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .language-javascript {
+        width: 400px;
+
+    }
+
+    .sorting-container{
+        flex-wrap: wrap;
+    }
+
+
+}

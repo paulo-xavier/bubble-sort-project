@@ -1,0 +1,34 @@
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    color: white;    
+    padding-top: 5%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+.social-links{
+    padding-top: 10px;
+   
+}
+
+
+.instagram,
+.linkedin,
+.github{
+    padding: 18px;
+}
+
+
+footer{
+    padding-top: 70px;
+}
